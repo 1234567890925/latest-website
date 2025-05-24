@@ -29,7 +29,7 @@ document.addEventListener('mousemove', function (e) {
   butterfly.style.transform = `rotate(${rotation}deg)`;
 
   // Use an emoji or an image
-  butterfly.innerText = '🟢';
+  butterfly.innerText = '💚';
 
   document.body.appendChild(butterfly);
 
