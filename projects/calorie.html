@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Calories Estimation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #6c757d;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .tech {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back">Back to Portfolio</a>
+
+  <img src="../images/food-cal.jpg" 
+       alt="Food Calories Estimation" class="hero-image" />
+
+  <div class="container">
+    <h1>Food Calories Estimation</h1>
+    <p>
+      This project uses Convolutional Neural Networks (CNNs) to estimate calorie content from food images. The system processes an image using OpenCV for preprocessing (e.g., color correction, segmentation), and applies a trained CNN model to classify food types.
+    </p>
+    <p>
+      Each identified food item is then matched to known calorie-per-gram data. Using approximate portion sizing from image dimensions, the model calculates an estimated calorie value. This approach can support real-time food logging or meal tracking.
+    </p>
+    <p class="tech">Technologies: Python, CNN, OpenCV</p>
+  </div>
+
+</body>
+</html>

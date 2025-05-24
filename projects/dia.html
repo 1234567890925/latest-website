@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Detection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 60px 20px 40px;
+      line-height: 1.6;
+    }
+
+    .back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #6c757d;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .tech {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back">Back to Portfolio</a>
+
+  <img src="../images/dia.jpeg" 
+       alt="Diabetes Detection" class="hero-image" />
+
+  <div class="container">
+    <h1>Diabetes Detection</h1>
+    <p>
+      This project involves the development of a machine learning model for early diabetes detection. We used a dataset of patient health records containing features such as BMI, blood pressure, glucose levels, age, insulin levels, and skin thickness.
+    </p>
+    <p>
+      The model was trained using Scikit-learn with algorithms like Logistic Regression and Random Forest. After preprocessing and feature scaling with Pandas and NumPy, we evaluated the model using accuracy, precision, recall, and ROC-AUC score.
+    </p>
+    <p>
+      The goal was to assist healthcare professionals in identifying high-risk individuals through a simple, automated system.
+    </p>
+    <p class="tech">Technologies: Python, Pandas, Scikit-learn, NumPy, Matplotlib</p>
+
+  </div>
+
+</body>
+</html>
