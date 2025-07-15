@@ -18,7 +18,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: rgb(47, 46, 46);
             overflow-x: hidden;
         }
 
@@ -47,14 +47,14 @@
         .nav-links a {
             color: green;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 1000;
             font-size: 16px;
             transition: all 0.3s ease;
             position: relative;
         }
 
         .nav-links a:hover {
-            color: #ff6b6b;
+            color: #a6a5a5;
             transform: translateY(-2px);
         }
 
@@ -65,7 +65,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, #6bff89, #888a88);
             transition: width 0.3s ease;
         }
 
@@ -226,14 +226,14 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, grey, green);
             border-radius: 2px;
         }
 
         /* Experience Section */
         #resume {
-            background: linear-gradient(135deg, #fbfbfb 0%, #e8fce9 100%);
-            color: #333;
+            background: linear-gradient(135deg, #090c08, #152515);
+            color: #078301;
             padding: 100px 0;
         }
 
@@ -289,7 +289,7 @@
             top: 0;
             bottom: 0;
             width: 3px;
-            background: linear-gradient(to bottom, #4285f4, #1e40af, #005288);
+            background: linear-gradient(to bottom, #656565,  #2d5030, #02ab0d);
             transform: translateX(-50%);
         }
 
@@ -332,7 +332,7 @@
         .timeline-dot.blue-origin { background: #1e40af; }
 
         .timeline-content {
-            background: white;
+            background: rgb(24, 30, 23);
             padding: 0;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -351,20 +351,20 @@
         }
 
         .timeline-date {
-            color: #9CA3AF;
+            color: #afb5bf;
             font-size: 0.9rem;
             font-weight: 500;
         }
 
         .timeline-location {
-            color: #6B7280;
+            color: #838996;
             font-size: 0.85rem;
         }
 
         .timeline-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #333;
+            color: #ffffff;
             margin: 8px 0 5px;
         }
 
@@ -376,12 +376,12 @@
 
         .timeline-description {
             padding: 20px 25px;
-            color: #666;
+            color: #bab9b9;
             line-height: 1.6;
         }
 
         .read-more {
-            color: #4285f4;
+            color: #828282;
             font-weight: 500;
             cursor: pointer;
             text-decoration: none;
@@ -389,7 +389,7 @@
         }
 
         .read-more:hover {
-            color: #1e40af;
+            color: #00fe00;
         }
 
         /* Resume Link Section */
@@ -397,7 +397,7 @@
             text-align: center;
             margin-top: 60px;
             padding: 40px;
-            background: rgba(66, 133, 244, 0.1);
+            background: rgba(166, 242, 164, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(10px);
         }
@@ -406,19 +406,19 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(45deg, #4285f4, #1e40af);
+            background: linear-gradient(45deg, #414040, #787878);
             color: white;
             padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(66, 133, 244, 0.3);
+            box-shadow: 0 10px 30px rgba(73, 74, 75, 0.3);
         }
 
         .resume-download-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(66, 133, 244, 0.4);
+            box-shadow: 0 15px 40px rgba(66, 244, 75, 0.4);
         }
 
         .project-thumbnail {
@@ -458,7 +458,9 @@
 
         /* Projects Section */
         #projects {
-            background: #d5ded7;
+            background: linear-gradient(135deg, #090c08, #152515);
+            color: #078301;
+            padding: 100px 0;
         }
 
         .projects-grid {
@@ -469,7 +471,7 @@
         }
 
         .project-card {
-            background: white;
+            background: rgb(24, 30, 23);
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -483,9 +485,8 @@
 
         .project-image {
             height: 200px;
-            
             display: flex;
-            align-items: center;
+            align-items:normal;
             justify-content: center;
             color: white;
             font-size: 1.2rem;
@@ -499,17 +500,447 @@
         .project-content h3 {
             font-size: 1.4rem;
             margin-bottom: 15px;
-            color: #333;
+            color: #e7e7e7;
         }
 
+        .project-content p {
+            color: rgb(204, 202, 202);
+        }
+
+
         #education {
-            background: #c2c7c3;
+            background: linear-gradient(135deg, #090c08, #152515);
+            color: #078301;
+            padding: 100px 0;
+        }
+
+        .education-card {
+            display: flex;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            gap: 20px;
+        }
+
+        .education-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .education-details h3 {
+            margin: 0;
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .education-details p {
+            margin: 6px 0;
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .education-details .read-more {
+            display: inline-block;
+            margin-top: 6px;
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+
+        /* Skills Section - Infinite Carousel */
+        #skills {
+            background: linear-gradient(135deg, #090c08, #152515);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: auto;
+            padding: 80px 20px;
+            overflow: hidden;
+        }
+
+        #skills .section-title {
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 1400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            gap: 20px;
+            width: max-content;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .skill-card {
+            flex: 0 0 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .skill-header {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .skill-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-content li {
+            padding: 6px 0;
+            font-size: 0.9rem;
+            color: #ccc;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .skill-content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #4ecdc4;
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: 1001;
+        }
+
+        .scroll-progress {
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Touch indicators for mobile */
+        .touch-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                text-align: left !important;
+                margin-bottom: 40px;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-dot {
+                left: 21px !important;
+            }
+
+            .timeline-content {
+                margin-left: 60px;
+            }
+
+            .company-logos {
+                gap: 15px;
+            }
+
+            .company-logo {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            .company-logo img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .project-image {
+            height: 200px;
+            overflow: hidden;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            }
+
+            .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            }
+
+            /* Mobile Skills Carousel */
+            .skill-card {
+                flex: 0 0 280px;
+                min-height: 180px;
+            }
+
+            .carousel-track {
+                animation-duration: 25s;
+            }
+
+            .touch-hint {
+                display: block;
+            }
+
+            /* Mobile navigation improvements */
+            .mobile-nav-toggle {
+                display: block;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1002;
+            }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .nav-links.mobile-open {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-card {
+                flex: 0 0 250px;
+                min-height: 160px;
+            }
+
+            .skill-header {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .skill-content {
+                padding: 15px;
+            }
+
+            .carousel-track {
+                animation-duration: 20s;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Add smooth scrolling for better UX */
+        @media (prefers-reduced-motion: no-preference) {
+            * {
+                scroll-behavior: smooth;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Navbar full width, no overlap */
+            .navbar {
+                width: 100vw;
+                left: 0;
+                right: 0;
+                top: 0;
+                border-radius: 0 0 20px 20px;
+                background: rgba(0,0,0,0.98);
+                padding: 15px 20px;
+                z-index: 1000;
+            }
+
+            /* Fix mobile nav menu size */
+            .nav-links.mobile-open {
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+            }
+
+            /* Reduce section padding for mobile */
+            section {
+                padding: 40px 0 !important;
+                min-height: unset !important;
+            }
+
+            /* Smaller section titles */
+            .section-title {
+                margin-bottom: 24px;
+            }
+
+            /* Make sure hero section content isn't hidden under navbar */
+            .hero {
+                padding-top: 64px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 24px 0 !important;
+            }
+            .section-title {
+                margin-bottom: 14px;
+            }
+            .hero {
+                padding-top: 52px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar,
+            .navbar.scrolled {
+                background: transparent !important;
+                backdrop-filter: none !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                padding: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .navbar,
+            .navbar.scrolled {
+                background: transparent !important;
+                backdrop-filter: none !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
         }
 
         /* Contact Section */
         #contact {
-            background: linear-gradient(135deg, #878d87 0%);
-            color: white;
+            background: linear-gradient(135deg, #090c08, #152515);
+            color: #078301;
+            padding: 100px 0;
         }
 
         .contact-content {
@@ -617,9 +1048,14 @@
 
         .scroll-progress {
             height: 100%;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, gray, green);
             width: 0%;
             transition: width 0.1s ease;
+        }
+
+        .linkedin {
+            color: #078301;
+            padding: 100px 0;  
         }
     </style>
 </head>
@@ -633,8 +1069,11 @@
     <nav class="navbar" id="navbar">
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#resume">Experience</a></li>
+            <li><a href="#resume1">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -653,7 +1092,7 @@
             <p class="hero-subtitle">Computer Engineer</p>
             <h1 class="hero-title">Rutuja Mandapmalvi</h1>
             <p class="hero-description">
-                I'm Rutuja Mandapmalvi — a Computer Engineering grad student crafting smart, scalable software. From AI-powered chatbots to high-impact APIs, I turn ideas into elegant tech solutions.
+                From streamlining APIs to deploying audio emotion classifiers, I craft scalable software that blends engineering precision with real-world impact.
             </p>
         </div>
     </section>
@@ -666,7 +1105,7 @@
             <!-- Company Logos -->
             <div class="company-logos">
                 <div class="company-logo uw">
-                    <img src="./images/uw.png" alt="Company logo"></img>
+                    <img src="./images/uw.jpeg" alt="Company logo"></img>
                 </div>
                 <div class="company-logo hero">
                     <img src="./images/accenture.jpeg" alt="Company logo"></img>
@@ -690,7 +1129,7 @@
                             <div class="timeline-location">Seattle, WA</div>
                             <h3 class="timeline-title">Student Associate</h3>
                         </div>
-                        <img src="./images/uw.png" class="timeline-image">
+                        <img src="./images/uw.jpeg" class="timeline-image">
                         <div class="timeline-description">
                             Supported student career development through peer advising and campus events.
                             <br><a href="./all-companies-info/uw.html" class="read-more">Read More</a>
@@ -751,8 +1190,8 @@
             </div>
 
             <!-- Resume Download Section -->
-            <div class="resume-link-section">
-                <h3 style="margin-bottom: 20px; color: #333;">Want to see more?</h3>
+            <div class="resume-link-section" id="resume1">
+                <h3 style="margin-bottom: 20px; color: #0aaf01;">Want to see more?</h3>
                 <a href="./images/resume.pdf" class="resume-download-btn">
                     📄 View Full Resume
                 </a>
@@ -767,10 +1206,18 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-thumbnail">
-                            <img src="./images/roadmap.png">
-                        </div>
-                        Roadmap Creation
+                        <img src="./images/hearme.png" alt="HearMe Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>HearMe: Audio Emotion Detection</h3>
+                        <p>Real-time audio emotion detection powered by CNN and Edge Impulse, integrated in a Streamlit web app with sub-2s latency.</p>
+                        <br><a href="./projects/hearme.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/roadmap.png" alt="Roadmap Generator">
                     </div>
                     <div class="project-content">
                         <h3>AI-Powered Roadmap Generator</h3>
@@ -778,32 +1225,40 @@
                         <br><a href="./projects/roadmap.html" class="read-more">Read More</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-thumbnail">
-                            <img src="./images/f1.jpeg">
-                        </div>
-                        F1-GPT
+                        <img src="./images/f1.jpeg" alt="F1-GPT">
                     </div>
                     <div class="project-content">
-                        <h3>An AI chatbot</h3>
-                        <p>Get answers to all your F1 related questions!</p>
+                        <h3>An AI Chatbot for F1</h3>
+                        <p>Get answers to all your F1 related questions using GPT-powered chat logic.</p>
                         <br><a href="./projects/f1.html" class="read-more">Read More</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-thumbnail">
-                            <img src="./images/food-cal.jpg">
-                        </div>
-                        Food Calories Estimation
+                        <img src="./images/food-cal.jpg" alt="Food Calorie Estimator">
                     </div>
                     <div class="project-content">
-                        <h3>Food calories estimation using image processing</h3>
-                        <p>Image processing techniques to estimate food calorie count using CNN models.</p>
+                        <h3>Food Calorie Estimation</h3>
+                        <p>Used image processing and ML techniques to estimate calorie content from food images, improving health tracking automation.</p>
                         <br><a href="./projects/calorie.html" class="read-more">Read More</a>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/pregsys.png" alt="Pregsys Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Pregsys: IMR Analysis in India</h3>
+                        <p>Used regression and visualization to analyze Infant Mortality Rate trends from NFHS data and how they relate to maternal care factors.</p>
+                        <br><a href="./projects/pregsys.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-thumbnail">
@@ -826,31 +1281,174 @@
         <div class="projects-overlay"></div>
         <div class="container">
             <h2 class="section-title">EDUCATION</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    
-                    <div class="project-image">
-                        <img src="./images/uw.png" alt="University of Washington" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>University of Washington</h3>
-                        <p>Professional Masters Program Computer And Electrical Engineering</p>
-                        <a href="./education/uw.html" class="read-more" style="text-decoration: none;">Read more</a>
+            
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="./images/uw.jpeg" alt="University of Washington">
+                </div>
+                <div class="education-details">
+                    <h3>University of Washington</h3>
+                    <p>Professional Masters Program – Computer and Electrical Engineering</p>
+                    <a href="./education/uw.html" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="./images/sppu.jpeg" alt="University of Pune">
+                </div>
+                <div class="education-details">
+                    <h3>University of Pune</h3>
+                    <p>Bachelor of Computer Engineering</p>
+                    <a href="./education/upune.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Infinite Carousel -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="carousel-container">
+            <div class="carousel-track" id="skillsCarousel">
+                <!-- First set of cards -->
+                <div class="skill-card">
+                    <div class="skill-header">Programming Languages</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Python (data pipelines, scripting)</li>
+                            <li>JavaScript (frontend and backend)</li>
+                            <li>SQL (data modeling)</li>
+                        </ul>
                     </div>
                 </div>
-    
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/sppu.jpeg" alt="NIT Trichy" style="width: 100%; height: 100%; object-fit: cover;">
+
+                <div class="skill-card">
+                    <div class="skill-header">Frameworks Libraries</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>React</li>
+                            <li>TensorFlow</li>
+                            <li>Keras</li>
+                            <li>PyTorch</li>
+                            <li>scikit-learn</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
                     </div>
-                    <div class="project-content">
-                        <h3>University of Pune</h3>
-                        <p>Bachelor of Computer Engineering</p>
-                        <a href="./education/upune.html" class="read-more" style="text-decoration: none;">Read more</a>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">Cloud and Infrastructure</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>AWS (EC2, S3, Lambda, IAM)</li>
+                            <li>DataStax</li>
+                            <li>IBM AppConnect</li>
+                            <li>Jenkins</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">API Management and Integration</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>RESTful APIs</li>
+                            <li>CRUD operations</li>
+                            <li>API testing (Postman)</li>
+                            <li>OpenAI API</li>
+                            <li>IBM AppConnect</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">Development Tools Methodologies</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Postman</li>
+                            <li>JIRA</li>
+                            <li>Git (version control)</li>
+                            <li>Agile development practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Duplicate set for seamless infinite scroll -->
+                <div class="skill-card">
+                    <div class="skill-header">Programming Languages</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Python (data pipelines, scripting)</li>
+                            <li>JavaScript (frontend and backend)</li>
+                            <li>SQL (data modeling)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">Frameworks Libraries</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>React</li>
+                            <li>TensorFlow</li>
+                            <li>Keras</li>
+                            <li>PyTorch</li>
+                            <li>scikit-learn</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">Cloud and Infrastructure</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>AWS (EC2, S3, Lambda, IAM)</li>
+                            <li>DataStax</li>
+                            <li>IBM AppConnect</li>
+                            <li>Jenkins</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">API Management and Integration</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>RESTful APIs</li>
+                            <li>CRUD operations</li>
+                            <li>API testing (Postman)</li>
+                            <li>OpenAI API</li>
+                            <li>IBM AppConnect</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">Development Tools Methodologies</div>
+                    <div class="skill-content">
+                        <ul>
+                            <li>Postman</li>
+                            <li>JIRA</li>
+                            <li>Git (version control)</li>
+                            <li>Agile development practices</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="touch-hint">Swipe to explore skills →</div>
     </section>
 
     <!-- Contact Section -->
@@ -870,7 +1468,7 @@
                     </div>
                     <div class="contact-item">
                         <h3>LinkedIn</h3>
-                        <p>https://www.linkedin.com/in/rutuja-mandapmalvi/</p>
+                        <a class="linkedin" href="https://www.linkedin.com/in/rutuja-mandapmalvi/">https://www.linkedin.com/in/rutuja-mandapmalvi/</a>
                     </div>
                 </div>
             </div>
@@ -878,12 +1476,10 @@
     </section>
 
     <script>
-        // Navbar scroll effect and parallax background
-        window.addEventListener('scroll', () => {
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             const scrollProgress = document.getElementById('scrollProgress');
-            const projectsBackground = document.getElementById('projectsBackground');
-            const projectsSection = document.getElementById('projects');
             
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -892,26 +1488,30 @@
             }
 
             // Update scroll progress
-            const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-            scrollProgress.style.width = scrolled + '%';
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            scrollProgress.style.width = scrolled + "%";
+        });
 
-            // Parallax effect for projects background
-            const projectsRect = projectsSection.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            
-            // Show background when projects section is in viewport
-            if (projectsRect.top < windowHeight && projectsRect.bottom > 0) {
-                projectsBackground.style.opacity = '1';
-                // Create parallax effect
-                const scrollOffset = window.pageYOffset;
-                const parallaxSpeed = 0.5;
-                projectsBackground.style.transform = `translateY(${scrollOffset * parallaxSpeed}px)`;
-            } else {
-                projectsBackground.style.opacity = '0';
+        // Mobile navigation toggle
+        const mobileNavToggle = document.getElementById('mobileNavToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileNavToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('mobile-open');
+            this.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+
+        // Close mobile nav when clicking on links
+        navLinks.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                navLinks.classList.remove('mobile-open');
+                mobileNavToggle.textContent = '☰';
             }
         });
 
-        // Smooth scroll for navigation links
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -925,7 +1525,51 @@
             });
         });
 
-        // Intersection Observer for animations
+        // Skills carousel touch support for mobile
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        const carousel = document.getElementById('skillsCarousel');
+
+        carousel.addEventListener('mousedown', (e) => {
+            isDown = true;
+            carousel.style.cursor = 'grabbing';
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isDown = false;
+            carousel.style.cursor = 'grab';
+        });
+
+        carousel.addEventListener('mouseup', () => {
+            isDown = false;
+            carousel.style.cursor = 'grab';
+        });
+
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 2;
+            carousel.scrollLeft = scrollLeft - walk;
+        });
+
+        // Touch events for mobile
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+        });
+
+        carousel.addEventListener('touchmove', (e) => {
+            if (!startX) return;
+            const x = e.touches[0].pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 2;
+            carousel.scrollLeft = scrollLeft - walk;
+        });
+
+        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -940,18 +1584,46 @@
             });
         }, observerOptions);
 
-        // Observe all project cards and timeline items
-        document.querySelectorAll('.project-card, .timeline-item').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            observer.observe(card);
+        // Observe timeline items and project cards
+        document.querySelectorAll('.timeline-item, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
 
-        // Open resume in new tab/window
-        function openResume() {
-            // Replace 'resume.pdf' with the actual path to Thanh's resume PDF
-            window.open('resume.pdf', '_blank');
+        // Pause carousel animation on hover for better UX
+        const skillCards = document.querySelectorAll('.skill-card');
+        skillCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                carousel.style.animationPlayState = 'paused';
+            });
+            card.addEventListener('mouseleave', () => {
+                carousel.style.animationPlayState = 'running';
+            });
+        });
+
+        // Enhanced mobile experience - adjust carousel speed based on screen size
+        function adjustCarouselSpeed() {
+            const screenWidth = window.innerWidth;
+            let duration = '30s';
+            
+            if (screenWidth <= 480) {
+                duration = '20s';
+            } else if (screenWidth <= 768) {
+                duration = '25s';
+            }
+            
+            carousel.style.animationDuration = duration;
+        }
+
+        // Call on load and resize
+        adjustCarouselSpeed();
+        window.addEventListener('resize', adjustCarouselSpeed);
+
+        // Performance optimization - reduce animations on low-end devices
+        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2) {
+            document.documentElement.style.setProperty('--reduced-motion', 'reduce');
         }
     </script>
     <script src="./js/ripple.js"></script>

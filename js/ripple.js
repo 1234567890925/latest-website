@@ -13,7 +13,7 @@ document.addEventListener('click', function (e) {
   });
 });
 
-document.addEventListener('mousemove', function (e) {
+/*document.addEventListener('mousemove', function (e) {
   const butterfly = document.createElement('div');
   butterfly.className = 'butterfly';
 
@@ -38,3 +38,4 @@ document.addEventListener('mousemove', function (e) {
     butterfly.remove();
   }, 1000);
 });
+*/

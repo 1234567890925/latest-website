@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HearMe Project</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 30px;
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>HearMe: Classifying Emotions from Audio</h1>
+  <img src="../images/hearme.png" alt="HearMe Project Image" />
+  <ul>
+    <li><strong>Model:</strong> CNN trained on 300+ audio samples for classifying 5 emotional categories using MFE features.</li>
+    <li><strong>Toolchain:</strong> Used Edge Impulse for dataset collection, model training, and model deployment.</li>
+    <li><strong>App:</strong> Integrated the model into a Streamlit web app for real-time audio prediction with < 2-second latency.</li>
+    <li><strong>Tech Integration:</strong> Parsed serial audio data, labeled emotions, and updated interface on the fly.</li>
+  </ul>
+
+  <a href="../index.html#projects" class="read-more">← Back to Projects</a>
+</body>
+</html>
