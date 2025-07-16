@@ -1508,11 +1508,13 @@
 
         // Close mobile nav when clicking on links
         navLinks.addEventListener('click', function(e) {
-            if (e.target.tagName === 'A') {
+            const linkClicked = e.target.closest('a');
+            if (linkClicked) {
                 navLinks.classList.remove('mobile-open');
                 mobileNavToggle.textContent = '☰';
             }
         });
+
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
