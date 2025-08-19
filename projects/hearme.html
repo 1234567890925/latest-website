@@ -37,16 +37,36 @@
       margin-bottom: 12px;
     }
 
-    .read-more {
+    .read-more,
+    .demo-btn {
       display: inline-block;
-      margin-top: 30px;
-      color: #4caf50;
-      text-decoration: none;
+      margin-top: 20px;
+      padding: 10px 18px;
+      border-radius: 6px;
       font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more {
+      color: #4caf50;
     }
 
     .read-more:hover {
       text-decoration: underline;
+    }
+
+    .demo-btn {
+      background-color: #0073e6;
+      color: #fff;
+    }
+
+    .demo-btn:hover {
+      background-color: #005bb5;
+    }
+
+    .button-group {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -56,10 +76,18 @@
   <ul>
     <li><strong>Model:</strong> CNN trained on 300+ audio samples for classifying 5 emotional categories using MFE features.</li>
     <li><strong>Toolchain:</strong> Used Edge Impulse for dataset collection, model training, and model deployment.</li>
-    <li><strong>App:</strong> Integrated the model into a Streamlit web app for real-time audio prediction with < 2-second latency.</li>
+    <li><strong>App:</strong> Integrated the model into a Streamlit web app for real-time audio prediction with &lt; 2-second latency.</li>
     <li><strong>Tech Integration:</strong> Parsed serial audio data, labeled emotions, and updated interface on the fly.</li>
   </ul>
 
-  <a href="../index.html#projects" class="read-more">← Back to Projects</a>
+  <!-- View Demo Button -->
+  <div class="button-group">
+    <a href="https://drive.google.com/file/d/1xqn7UKyiBbUTUT6zT8ummm5GGz3b3oGn/view?usp=sharing" target="_blank" class="demo-btn">View Demo</a>
+  </div>
+
+  <!-- Back to Projects Link -->
+  <div class="button-group">
+    <a href="../index.html#projects" class="read-more">← Back to Projects</a>
+  </div>
 </body>
 </html>
