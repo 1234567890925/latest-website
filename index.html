@@ -1057,6 +1057,24 @@
             color: #078301;
             padding: 100px 0;  
         }
+
+        
+        .timeline-image.logo {
+            height: 200px;
+            width: 100%;
+            object-fit: contain;     
+            object-position: center;
+            background: rgba(255,255,255,0.03); 
+            padding: 16px;          
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* mobile pe thoda chhota */
+        @media (max-width: 768px) {
+        .timeline-image.logo { height: 160px; padding: 12px; }
+        }
+
     </style>
 </head>
 <body>
@@ -1107,6 +1125,9 @@
             
             <!-- Company Logos -->
             <div class="company-logos">
+                <div class="company-logo persistent">
+                    <img src="./images/setfindr.jpg" alt="Company logo"></img>
+                </div>
                 <div class="company-logo uw">
                     <img src="./images/uw.jpeg" alt="Company logo"></img>
                 </div>
@@ -1123,6 +1144,25 @@
 
             <!-- Timeline -->
             <div class="timeline">
+
+            <!-- SetFindr Experience -->
+            <div class="timeline-item">
+                <div class="timeline-dot spacex"></div> <!-- naya dot ke liye custom class bhi bana sakte ho -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-date">August 2025 - Present</div>
+                        <div class="timeline-location">Seattle, WA</div>
+                        <h3 class="timeline-title">Full Stack Developer Intern</h3>
+                    </div>
+                    <img src="./images/setfindr.jpg" alt="SetFindr logo" class="timeline-image logo" loading="lazy">
+                    <div class="timeline-description">
+                        Working with the SetFindr engineering team to develop and optimize full-stack
+                        features, enhance database workflows, and improve platform performance.  
+                        <br><a href="./all-companies-info/setfindr.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+
                 <!-- uw Experience -->
                 <div class="timeline-item">
                     <div class="timeline-dot uw"></div>
